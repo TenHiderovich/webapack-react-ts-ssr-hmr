@@ -2,7 +2,7 @@ import express from 'express';
 import * as ReactDOM from 'react-dom/server';
 import { indexTemplate } from './indexTemplate';
 
-import { Header } from '../shared/Header';
+import { App } from '../App';
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.use('/static', express.static('./dist/client'));
 
 app.get('/', (req, res) => {
   res.send(
-    indexTemplate(ReactDOM.renderToString(Header())),
+    indexTemplate(ReactDOM.renderToString(App())),
   );
 });
 
