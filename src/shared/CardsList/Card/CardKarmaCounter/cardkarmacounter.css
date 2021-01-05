@@ -1,0 +1,31 @@
+.karmaCounter > * + * {
+  margin: 0 0 0 4px;
+}
+
+.karmaValue {
+  color: var(--greyC4);
+}
+
+.down svg {
+  transform: rotate(180deg);
+}
+
+@media all and (min-width: 1024px) {
+  .karmaValue {
+    color: var(--black);
+  }
+
+  .karmaCounter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .karmaCounter > * + * {
+    margin: 7px 0 0 0;
+  }
+
+  .karmaCounter button:hover svg path {
+    fill: var(--red);
+  }
+}
