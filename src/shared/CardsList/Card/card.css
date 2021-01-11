@@ -1,5 +1,4 @@
 .card {
-  background-color: var(--white);
   border-radius: 7px;
   display: flex;
   flex-flow: row wrap;

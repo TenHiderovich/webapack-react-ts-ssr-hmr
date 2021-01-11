@@ -5,4 +5,7 @@ import { App } from '../App';
 
 window.addEventListener('load', () => {
   ReactDOM.hydrate(<App />, document.getElementById('app'));
-})
+
+  module.hot.accept();
+});
+
