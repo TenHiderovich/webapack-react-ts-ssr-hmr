@@ -6,17 +6,19 @@
   "scripts": {
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
     "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "env NODE_ENV=development node ./bin/dev.js",
+    "dev": "env NODE_ENV=development CLIENT_ID=mO45vVgaEIT2mA node ./bin/dev.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@hot-loader/react-dom": "^16.13.0",
+    "@types/classnames": "^2.2.11",
     "@types/enzyme": "^3.10.8",
-    "@types/jest": "^26.0.19",
+    "@types/jest": "^26.0.20",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "classnames": "^2.2.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
     "enzyme": "^3.11.0",
@@ -39,6 +41,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "nanoid": "^3.1.20",
     "nodemon": "^2.0.2",
